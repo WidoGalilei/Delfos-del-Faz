@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delfos del Faz</title>
+    <link rel="stylesheet" href="Main Content.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="hamburgerMenu.css">
+    <link rel="stylesheet" href="form.css">
+    <link rel="stylesheet" href="main css.css">
+    <link rel="stylesheet" href="footer and button.css">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comforter&family=Covered+By+Your+Grace&family=Gloria+Hallelujah&family=Homemade+Apple&family=Permanent+Marker&family=Rock+Salt&display=swap" rel="stylesheet">
+
+
+
+</head>
+<body>
+    <!-- Header/Navigation bar -->
+    <div  class="fixedHeader">
+
+        <div class="mainHeader">
+            
+            <!--Delfos Logo -->
+
+            <img src= './Images/Logo.png ' alt="Delfos Logo" class="logo"></img>
+
+
+            <!-- Lenguage Selector -->
+
+            <nav>
+                <select
+                    id="lenguageSelector"
+                    name='lenguages'
+                    onchange="window.location.hash=this.value, location.reload(true)"
+                >
+                    <option value='ES' id="ES">ES</option>
+                    <option value='EN' id="EN">EN</option>
+                    <option value='DE' id="DE">DE</option>
+                    <option value='FR' id="FR">FR</option>
+                </select>
+
+
+            <!-- Phone icon with contact information -->
+
+                <button class="buttonPhonelink"> 
+
+                    <img src='./Images/phone.png' alt="Phone Icon" class="phoneIcon"></img>
+
+                    <div id='showContact' class="contactDropDownHide">
+                        <div class='phoneNumber'><img src='./Images/phone.png' class="innerphoneIcon"></img>+34 643 54 16 74</div>
+                        <div><img src='./Images/ubicationIcon.png' alt="" class="ubiIcon"></img>AL-6111, KM 3, 04638 Mojácar, Almería, Spain</div>
+                    </div>
+
+                </button>
+
+
+            <!-- Email Icon with contact FORM -->
+
+                <a href='./contact form.html' class="emailLink">
+                    <img src='./Images/emailIcon.png' alt="post letter icon" class="emailIcon"></img>
+                </a>
+
+
+            <!-- Hamburger/Menu -->
+
+                <div>
+                    <input id="menu-toggle" type="checkbox" />
+                            
+                    <label class='menu-button-container' for="menu-toggle">
+                        <div class='menu-button'></div>
+                    </label>
+
+                    <ul class="menu">
+                        <li><a  href='./booking' id="booking"></a></li>
+                        <li><a  href='./rooms' id="rooms"></a></li>
+                        <li><a  href='./food' id="food"></a></li>
+                        <li><a  href='./galeria' id="galeria"></a></li>
+                        <li><a  href='./live' id="live"></a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+
+
+    <div class="mainContentContainer">
+
+    <!-- Images Carusel -->
+
+        <div class="mainImage">
+
+            <button id="buttonLeft">
+                <img src='./Images/LeftArrow.png' alt="" class="arrowIcon"></img>
+            </button>
+
+
+            <button id="buttonRight">
+                <img src='./Images/RightArrow.png' alt="" class="arrowIcon"></img>
+            </button>
+
+
+            <div class="imagesCarusel">
+                <img src='./Images/Delfos House.png' alt="" id="imag1"></img>
+                <img src='./Images/Main Picture.JPG' alt="" id="imag2"></img>
+                <img src='./Images/sala.JPG' alt="" id="imag3"></img>
+            </div>
+
+        </div>
+
+    <!-- All main content -->
+
+        <div class="MainTextContainer">
+
+        <!-- Wellcome Text Animation -->
+
+            <div id="wellcomeLetterContainer" class="centerWithFlexbox">
+                <h1 id="WellcomeLetters" class="showNhide"></h1>
+            </div>
+
+
+        <!-- Introduction -->
+
+            <section id="section1">
+
+                <h2 id="AppRuralH2">Apartamento Rural</h2>
+
+
+                <p id="text1">Ofrecemos 3 apartamenos retirados para disfrutar tranquilidad y armonia. Tanto en pareja como en familia. </p>
+
+
+                <img id="poolPicture" src="./Images/Piscina 1.jpg" alt="swimming pool picture"></img>
+
+
+                <p id="text2">Todos los appartamentos son ensuit con cocina propia. 
+                    Disponemos de piscina excusiva para clientes, restaurante, un muy amplio Parking,
+                    tambien apto para caravanas.
+                    Y encantados de recibir mascotas</p>
+
+
+            </section>
+
+
+        <!-- Concert Information -->
+
+            <section id='concertSection'>
+
+                <h3 id="ConcertH3">Nuestros conciertos</h3>
+
+                <p id="concertText">Tenemos esporadicamente conciertos y Jam sessions </p>
+
+
+                <img src="./Images/escenario.JPG" alt="Stage setup" class="startLeft liveMusicPics "></img>
+
+                <img src="./Images/concierto.jpg" alt="Concert Image" class="startRight liveMusicPics "></img>
+            </section>
+
+
+        <!-- Art Information -->
+
+            <section  id='artSection'>
+
+                <h3 id="artH3">Exposicion de obras de arte </h3>
+
+                <p id="artText">Arte</p>
+
+                <img id="paintingsPicture" src="./Images/ArtMain.JPG" alt="art painting picture" class="spacerTopBottom"></img>
+
+            </section> 
+
+
+        <!-- Map -->
+
+            <section id='mapSection'>
+
+                <p id="mapText">Nos encontramos a tan solo a 5 minutos de Mojacar Pueblo y a 10 min de la Playa</p>
+
+                <div><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7842.4068707033975!2d-1.8651802199576903!3d37.14292601101497!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd7ad7a55d3dad13%3A0xcad05b45afabdadf!2sDelfos%20del%20Faz!5e0!3m2!1ses!2sch!4v1676319486448!5m2!1ses!2sch" width="340" height="260" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+
+            </section>
+
+
+        <!-- Footer -->
+            <div id="footer">
+
+                <a href="" id="facebookLink" class="socialMedia"></a>
+
+                <a href="" id="instagramLink" class="socialMedia"></a>
+
+                <a href="./contact form.html">Contacta con nosotros</a>
+
+            </div>
+
+        <!-- Sticky Reservation Button -->
+            
+            <a id="resButton" class="show" href="https://www.tripadvisor.es/Search?q=Apartamento%20Rural%20Delfos%20del%20Faz&searchSessionId=270C717AFDDB1AE35ECA4A4233827D521676219252503ssid&searchNearby=false&geo=580270&sid=A11AC3F1DFA54357B5719F80A0A33B251676219282246&blockRedirect=true&rf=1" 
+                class="resLink"></a>
+            
+        
+    </div>
+
+    <script src="Header.js"></script>
+    <script src="Main Content.js"></script>
+
+
+</body>
+</html>
