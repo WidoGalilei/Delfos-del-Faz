@@ -149,7 +149,6 @@
 
     #artSection {
         background-color: rgb(37, 197, 144);
-        padding: 2em 0 2em 0;
     }
 
 
@@ -161,13 +160,6 @@
     }
  
 
-
-    #artSection,#concertSection,#mapSection,
-    #artSection > *,#concertSection > *,#mapSection > *{
-        margin: 1em 0 1em 0;
-
-    }
-
     #mapSection{
         background-color: rgb(216, 216, 216);
 
@@ -176,8 +168,11 @@
         padding: 2em 0 2em 0;
 
     }
+    
 
-
+    #artSection, #mapSection, #concertSection, #concertText, #artText {
+    padding: 2em 0 2em 0;
+    }
 
 
 
