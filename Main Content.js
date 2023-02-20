@@ -27,7 +27,6 @@
                     element.classList = 'hidePicture';
                 }
             }
-
         }
 
     // functions to move to next or prev. pictures
@@ -87,27 +86,44 @@
 
         }
 
+
+    //Horizontal animation off concert pictures
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('horizontalAnimation')
+                }
+                // } else {
+                //     entry.target.classList.remove('horizontalAnimation')
+                // }
+
+            })
+        })
+
+        const concertPictures = document.querySelectorAll('.liveMusicPics');
+        concertPictures.forEach((pic) => observer.observe(pic));
+
+
+
+
     // set a timer of 10 sec 
         // setInterval(showNhide, 10000)
 
     // run it once at page opening
         showNhide()
 
-    //Horizontal animation off concert pictures
 
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach((entry) => {
 
-            if (entry.isIntersecting) {
-                entry.target.classList.add('horizontalAnimation')
-            }
-            // } else {
-            //     entry.target.classList.remove('horizontalAnimation')
-            // }
-
-        })
+// Hide reservation Button when drop down menu is shown
+    
+    const menuCheckBox = document.querySelector('#menu-toggle')
+    
+    menuCheckBox.addEventListener('click', () =>{
+        if (resButton.style.display === 'none'){
+            resButton.style.display = 'flex'
+                } else {
+            resButton.style.display = 'none'
+        }
     })
-
-    const concertPictures = document.querySelectorAll('.liveMusicPics');
-    concertPictures.forEach((pic) => observer.observe(pic));
-

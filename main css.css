@@ -3,7 +3,12 @@
     padding: 0;
     font-family: cursive;
   }
-  
+
+
+  body {
+    background-color: rgb(255, 255, 255);
+  }
+
   
   a:link, a:visited {
     text-decoration: none;
@@ -11,10 +16,6 @@
     cursor: pointer;
   }
   
-  
-  body {
-    background-color: rgb(255, 255, 255);
-  }
   
   .hide {
     display: none;
@@ -33,3 +34,5 @@
   .spacerTopBottom {
     margin: 1em 0 1em 0;
   }
+
+  
