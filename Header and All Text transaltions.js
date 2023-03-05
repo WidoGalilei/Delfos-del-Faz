@@ -84,11 +84,15 @@
         
         // Depending on the hash lenaguage will be changed
 
-        if (window.location.hash) {
+
+        const selectedLenguage = window.location.hash
+      
+
+        if (selectedLenguage) {
 
             // English
 
-                if (window.location.hash === '#EN') {
+                if (selectedLenguage === '#EN') {
                     
                     document.querySelector('#EN').selected = true
 
@@ -133,7 +137,7 @@
             // German 
                 
                 
-                else if (window.location.hash === '#DE') {
+                else if (selectedLenguage === '#DE') {
 
                     document.querySelector('#DE').selected = true
 
@@ -178,7 +182,7 @@
             // French
                 
                 
-                else if (window.location.hash === '#FR') {
+                else if (selectedLenguage === '#FR') {
 
                     document.querySelector('#FR').selected = true
 
@@ -222,4 +226,11 @@
             }
         
 
+            const a = document.querySelector('#rooms')
 
+            a.addEventListener('click', function(e) {
+            
+                window.location="./Appartments.html" + window.location.hash
+            
+                
+            });

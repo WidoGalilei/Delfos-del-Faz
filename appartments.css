@@ -1,0 +1,41 @@
+body{
+    /* background-color: rgb(117, 108, 241); */
+}
+
+#app1 {
+    background-color: rgb(121, 111, 255);
+    border: 5px solid red;
+
+}
+#app2 {
+    background-color: rgb(97, 204, 102);
+
+}
+#app3 {
+    background-color: rgb(151, 67, 95);
+
+}
+
+/* Main Logo IMG */
+
+    #LogoImg{
+        width: 90%;
+    }
+
+
+.picContainer{
+    width:90vw;
+    height: 90vh;
+    margin: 1em;
+
+}
+.appartments,.picContainer,.pictures  {
+    margin: 5em 0;
+}
+
+.pictures {
+    width:300px;
+    height: 300px;
+    border-radius: 5%;
+    margin: 1em;
+}
